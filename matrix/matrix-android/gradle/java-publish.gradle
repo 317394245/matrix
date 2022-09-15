@@ -109,12 +109,16 @@ if (project.hasProperty("signing.keyId")) {
  * Setup custom maven repo
  */
 publishing.repositories {
+//    maven {
+//        url "${isReleaseBuild() ? getReleaseRepositoryUrl() : getSnapshotRepositoryUrl()}"
+//        credentials {
+//            username "${getRepositoryUsername()}"
+//            password "${getRepositoryPassword()}"
+//        }
+//    }
     maven {
-        url "${isReleaseBuild() ? getReleaseRepositoryUrl() : getSnapshotRepositoryUrl()}"
-        credentials {
-            username "${getRepositoryUsername()}"
-            password "${getRepositoryPassword()}"
-        }
+        name "proMaven"
+        url "${rootProject.file("localMaven")}"
     }
 }
 

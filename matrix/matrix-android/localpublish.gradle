@@ -1,3 +1,4 @@
+
 // OSS_ANDROID_TEMPLATE_FILE_HEADER
 /**
  * New android-publish gradle script
@@ -15,30 +16,13 @@ def isReleaseBuild() {
 }
 
 def getReleaseRepositoryUrl() {
-    return hasProperty('RELEASE_REPOSITORY_URL') ? RELEASE_REPOSITORY_URL : readPropertyFromLocalProperties('RELEASE_REPOSITORY_URL')
+    return "$rootDir/repos/releases"
 }
 
 def getSnapshotRepositoryUrl() {
-    return hasProperty('SNAPSHOT_REPOSITORY_URL') ? SNAPSHOT_REPOSITORY_URL : readPropertyFromLocalProperties('SNAPSHOT_REPOSITORY_URL')
+    return "${rootDir}/repos/snapshots"
 }
 
-def readPropertyFromLocalProperties(String key) {
-    Properties properties = new Properties()
-    try {
-        properties.load(project.rootProject.file('local.properties').newDataInputStream())
-    } catch (Exception e) {
-        println("load local properties failed msg:${e.message}")
-    }
-    return properties.getProperty(key)
-}
-
-def getRepositoryUsername() {
-    return hasProperty('REPOSITORY_USERNAME') ? REPOSITORY_USERNAME : readPropertyFromLocalProperties('REPOSITORY_USERNAME')
-}
-
-def getRepositoryPassword() {
-    return hasProperty('REPOSITORY_PASSWORD') ? REPOSITORY_PASSWORD : readPropertyFromLocalProperties('REPOSITORY_PASSWORD')
-}
 
 def pomConfig = {
     scm {
@@ -140,8 +124,7 @@ android.libraryVariants.all { variant ->
         }
     }
 
-    def publicationName = "component${variant.name.capitalize()}"
-
+    def publicationName = "MLocal${variant.name.capitalize()}"
     // Declare publications
     publishing.publications {
         "$publicationName"(MavenPublication) {
@@ -180,17 +163,9 @@ if (project.hasProperty("signing.keyId")) {
  * Setup custom maven repo
  */
 publishing.repositories {
-//    maven {
-//        url "${isReleaseBuild() ? getReleaseRepositoryUrl() : getSnapshotRepositoryUrl()}"
-//        credentials {
-//            username "${getRepositoryUsername()}"
-//            password "${getRepositoryPassword()}"
-//        }
-//    }
-
     maven {
-        name "proMaven"
-        url "${rootProject.file("localMaven")}"
+        name "proRepo"
+        url "${isReleaseBuild() ? getReleaseRepositoryUrl() : getSnapshotRepositoryUrl()}"
     }
 }
 
@@ -231,5 +206,3 @@ task buildAndPublishRepo(type: Copy, dependsOn: ['publish']) {
         println "* published to repo: ${project.group}:${project.name}:${project.version}"
     }
 }
-
-apply from: rootProject.file('gradle/check.gradle')

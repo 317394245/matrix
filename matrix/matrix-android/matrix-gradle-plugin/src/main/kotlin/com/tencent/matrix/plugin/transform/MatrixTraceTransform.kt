@@ -19,14 +19,16 @@ package com.tencent.matrix.plugin.transform
 import com.android.build.api.transform.*
 import com.android.build.gradle.internal.pipeline.TransformManager
 import com.android.builder.model.AndroidProject.FD_OUTPUTS
-import com.android.utils.FileUtils
 import com.google.common.base.Joiner
+import com.google.common.collect.FluentIterable
+import com.google.common.io.Files
 import com.tencent.matrix.javalib.util.Log
 import com.tencent.matrix.plugin.trace.MatrixTrace
 import com.tencent.matrix.trace.Configuration
 import com.tencent.matrix.trace.extension.MatrixTraceExtension
 import org.gradle.api.Project
 import java.io.File
+import java.nio.file.StandardCopyOption
 import java.util.concurrent.ConcurrentHashMap
 
 class MatrixTraceTransform(
@@ -101,7 +103,7 @@ class MatrixTraceTransform(
                         Status.ADDED, Status.CHANGED -> {
                             copyFileAndMkdirsAsNeed(inputJar, outputJar)
                         }
-                        Status.REMOVED -> FileUtils.delete(outputJar)
+                        Status.REMOVED -> outputJar.deleteOnExit()
                         else -> {}
                     }
                 } else {
@@ -128,13 +130,15 @@ class MatrixTraceTransform(
                             }
                             Status.REMOVED -> {
                                 val outputFile = toOutputFile(outputDir, inputDir, inputFile)
-                                FileUtils.deleteIfExists(outputFile)
+                                outputFile.deleteOnExit()
                             }
                             else -> {}
                         }
                     }
                 } else {
-                    for (`in` in FileUtils.getAllFiles(inputDir)) {
+                   val files = FluentIterable.from<File>(Files.fileTraverser().depthFirstPreOrder(inputDir))
+                        .filter(Files.isFile())
+                    for (`in` in files) {
                         val out = toOutputFile(outputDir, inputDir, `in`)
                         copyFileAndMkdirsAsNeed(`in`, out)
                     }
@@ -146,12 +150,24 @@ class MatrixTraceTransform(
     private fun copyFileAndMkdirsAsNeed(from: File, to: File) {
         if (from.exists()) {
             to.parentFile.mkdirs()
-            FileUtils.copyFile(from, to)
+            java.nio.file.Files.copy(
+                from.toPath(),
+                to.toPath(),
+                StandardCopyOption.COPY_ATTRIBUTES,
+                StandardCopyOption.REPLACE_EXISTING)
         }
     }
 
     private fun toOutputFile(outputDir: File, inputDir: File, inputFile: File): File {
-        return File(outputDir, FileUtils.relativePossiblyNonExistingPath(inputFile, inputDir))
+        return File(outputDir, relativePossiblyNonExistingPath(inputFile, inputDir))
+    }
+
+    fun relativePossiblyNonExistingPath(inputFile:File, inputDir:File) : String {
+        var path: String = inputDir.toURI().relativize(inputFile.toURI()).getPath()
+        if (File.separatorChar != '/') {
+            path = path.replace('/', File.separatorChar)
+        }
+        return path
     }
 
     private fun configure(transformInvocation: TransformInvocation): Configuration {
