@@ -1,0 +1,86 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-arscutil",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "v5er2pvrnnfpjapg6og7ayf4g4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-arscutil-2.0.8LOCAL.jar",
+          "url": "matrix-arscutil-2.0.8LOCAL.jar",
+          "size": 34197,
+          "sha512": "464483b385c87cb754f4e47b7a7e190527b43e20c267ccc66640a4c67d8e3e95c6f893062922f278eb3b5cf45f72909bf0d594050f64be0fbb5a5801c9e68779",
+          "sha256": "e01ad3184c57166567ebe018b2400d82331e474c7c392e4c6255aa04bd03bb11",
+          "sha1": "0787eadef39195a7c4e3ec4eb346bee93129eb00",
+          "md5": "530ea3d04c9db3bd87c5312345cb4c63"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.6"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-arscutil-2.0.8LOCAL.jar",
+          "url": "matrix-arscutil-2.0.8LOCAL.jar",
+          "size": 34197,
+          "sha512": "464483b385c87cb754f4e47b7a7e190527b43e20c267ccc66640a4c67d8e3e95c6f893062922f278eb3b5cf45f72909bf0d594050f64be0fbb5a5801c9e68779",
+          "sha256": "e01ad3184c57166567ebe018b2400d82331e474c7c392e4c6255aa04bd03bb11",
+          "sha1": "0787eadef39195a7c4e3ec4eb346bee93129eb00",
+          "md5": "530ea3d04c9db3bd87c5312345cb4c63"
+        }
+      ]
+    }
+  ]
+}

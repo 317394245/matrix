@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-gradle-plugin",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "qfw7dtec7jeonltkqbuayrcy7q"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "matrix-gradle-plugin-2.0.8LOCAL.jar",
+          "url": "matrix-gradle-plugin-2.0.8LOCAL.jar",
+          "size": 184498,
+          "sha512": "98d8b4c1b32dec3a92b2a59acf14fdeae542b68bffa3bc231e8e547731162df08ee3d89b0b5ffae3458ae3c6a056e600c8d99fd27ad798c1852eeadd8bad6b7e",
+          "sha256": "2c556fcc39631f409e015151bf18d4982b520a50fd821cf91fac72cb79884f62",
+          "sha1": "04b639dc385f24f0d6ba3074e46e24924cf45b07",
+          "md5": "7dcf4cce78217650760a5e36b321f7a0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "7.0"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "7.0"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "4.0.0"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-arscutil",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.4.32"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-gradle-plugin-2.0.8LOCAL.jar",
+          "url": "matrix-gradle-plugin-2.0.8LOCAL.jar",
+          "size": 184498,
+          "sha512": "98d8b4c1b32dec3a92b2a59acf14fdeae542b68bffa3bc231e8e547731162df08ee3d89b0b5ffae3458ae3c6a056e600c8d99fd27ad798c1852eeadd8bad6b7e",
+          "sha256": "2c556fcc39631f409e015151bf18d4982b520a50fd821cf91fac72cb79884f62",
+          "sha1": "04b639dc385f24f0d6ba3074e46e24924cf45b07",
+          "md5": "7dcf4cce78217650760a5e36b321f7a0"
+        }
+      ]
+    }
+  ]
+}

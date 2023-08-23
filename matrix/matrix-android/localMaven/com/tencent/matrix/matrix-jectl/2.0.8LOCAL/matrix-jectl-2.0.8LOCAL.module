@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-jectl",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-jectl-2.0.8LOCAL.aar",
+          "url": "matrix-jectl-2.0.8LOCAL.aar",
+          "size": 445957,
+          "sha512": "815a2f7f654d096fe7d7345754e6787d4dd9ff347a205dd97a89b3c34bda405e82f6605ddc886f6306b8dacce6c142d337010e982c0781b6859ee6c7549c07b7",
+          "sha256": "d20c62981d28e38ecf05844d10c851b92d946d3cd0ee80c6f7c3e0b8dbf641b7",
+          "sha1": "f1189e31676749cd6483e55909eb0fa4034487f5",
+          "md5": "5974f43989917833e489319021c73b14"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-jectl-2.0.8LOCAL.aar",
+          "url": "matrix-jectl-2.0.8LOCAL.aar",
+          "size": 445957,
+          "sha512": "815a2f7f654d096fe7d7345754e6787d4dd9ff347a205dd97a89b3c34bda405e82f6605ddc886f6306b8dacce6c142d337010e982c0781b6859ee6c7549c07b7",
+          "sha256": "d20c62981d28e38ecf05844d10c851b92d946d3cd0ee80c6f7c3e0b8dbf641b7",
+          "sha1": "f1189e31676749cd6483e55909eb0fa4034487f5",
+          "md5": "5974f43989917833e489319021c73b14"
+        }
+      ]
+    }
+  ]
+}

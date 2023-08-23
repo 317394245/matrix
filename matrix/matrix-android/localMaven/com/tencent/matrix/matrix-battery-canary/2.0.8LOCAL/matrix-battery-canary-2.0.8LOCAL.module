@@ -1,0 +1,113 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-battery-canary",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent",
+          "module": "mmkv",
+          "version": {
+            "requires": "1.2.11"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-trace-canary",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-battery-canary-2.0.8LOCAL.aar",
+          "url": "matrix-battery-canary-2.0.8LOCAL.aar",
+          "size": 476346,
+          "sha512": "d44861e445c7170df483c92df4185b20e5a52a638518909e6da75265d269a81ec632f54a424df863d1c928a3facaa4ccc514bd50dc6c7766e62d7cff21f49658",
+          "sha256": "0f66744cb00362adbd9b9fd322fc9dad869593d2a46d6a34cd11ba4caccb5095",
+          "sha1": "870ff74685ac1a3d3cda4f0328c3cc4b35e5ccc1",
+          "md5": "89792a0a9979897c0010e328d99d3182"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-trace-canary",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-battery-canary-2.0.8LOCAL.aar",
+          "url": "matrix-battery-canary-2.0.8LOCAL.aar",
+          "size": 476346,
+          "sha512": "d44861e445c7170df483c92df4185b20e5a52a638518909e6da75265d269a81ec632f54a424df863d1c928a3facaa4ccc514bd50dc6c7766e62d7cff21f49658",
+          "sha256": "0f66744cb00362adbd9b9fd322fc9dad869593d2a46d6a34cd11ba4caccb5095",
+          "sha1": "870ff74685ac1a3d3cda4f0328c3cc4b35e5ccc1",
+          "md5": "89792a0a9979897c0010e328d99d3182"
+        }
+      ]
+    }
+  ]
+}

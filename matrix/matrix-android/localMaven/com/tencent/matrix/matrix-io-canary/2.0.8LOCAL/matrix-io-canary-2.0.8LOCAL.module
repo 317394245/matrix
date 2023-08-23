@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-io-canary",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-io-canary-2.0.8LOCAL.aar",
+          "url": "matrix-io-canary-2.0.8LOCAL.aar",
+          "size": 1320466,
+          "sha512": "6a681ba7c7c90253099f47a97e57eabde2edb1950cbba6182e1cd26a5cc7eafa2cac36555a6586eb53ba4beafae0cfbd7115db4e217719ae2b765b85cc23044e",
+          "sha256": "6e825bc8229370a448cc697cfdfa9278c233a52a0aa511ff3fab768e2f9d23c8",
+          "sha1": "541d09766251d3f0cc106aa4329c6e2df6724b2e",
+          "md5": "b3b1972f54752b7c3f14e37e506c7549"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-io-canary-2.0.8LOCAL.aar",
+          "url": "matrix-io-canary-2.0.8LOCAL.aar",
+          "size": 1320466,
+          "sha512": "6a681ba7c7c90253099f47a97e57eabde2edb1950cbba6182e1cd26a5cc7eafa2cac36555a6586eb53ba4beafae0cfbd7115db4e217719ae2b765b85cc23044e",
+          "sha256": "6e825bc8229370a448cc697cfdfa9278c233a52a0aa511ff3fab768e2f9d23c8",
+          "sha1": "541d09766251d3f0cc106aa4329c6e2df6724b2e",
+          "md5": "b3b1972f54752b7c3f14e37e506c7549"
+        }
+      ]
+    }
+  ]
+}

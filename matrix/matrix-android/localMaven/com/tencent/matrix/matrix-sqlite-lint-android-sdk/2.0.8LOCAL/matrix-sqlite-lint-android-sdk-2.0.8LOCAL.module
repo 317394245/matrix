@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-sqlite-lint-android-sdk",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-sqlite-lint-android-sdk-2.0.8LOCAL.aar",
+          "url": "matrix-sqlite-lint-android-sdk-2.0.8LOCAL.aar",
+          "size": 1736811,
+          "sha512": "f494254fe7834155a4983af1ace7c97e1c5ed2f5977794486e820eb105ec3dc0df2f74c4e79c685612875617b4f1dab625738d9d5f1adfb5550415cdbb1b290b",
+          "sha256": "a4e84f26c67ca979d311eac18e424bf9cb0adb70dbee0208824c216f96b478df",
+          "sha1": "11d838427fa8ec592453432337e675bce6c9cd84",
+          "md5": "8d63210c167611c4ae5bfe6be7a011c6"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-sqlite-lint-android-sdk-2.0.8LOCAL.aar",
+          "url": "matrix-sqlite-lint-android-sdk-2.0.8LOCAL.aar",
+          "size": 1736811,
+          "sha512": "f494254fe7834155a4983af1ace7c97e1c5ed2f5977794486e820eb105ec3dc0df2f74c4e79c685612875617b4f1dab625738d9d5f1adfb5550415cdbb1b290b",
+          "sha256": "a4e84f26c67ca979d311eac18e424bf9cb0adb70dbee0208824c216f96b478df",
+          "sha1": "11d838427fa8ec592453432337e675bce6c9cd84",
+          "md5": "8d63210c167611c4ae5bfe6be7a011c6"
+        }
+      ]
+    }
+  ]
+}

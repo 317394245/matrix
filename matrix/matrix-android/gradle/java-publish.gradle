@@ -116,9 +116,17 @@ publishing.repositories {
 //            password "${getRepositoryPassword()}"
 //        }
 //    }
+//    maven {
+//        name "proMaven"
+//        url "${rootProject.file("localMaven")}"
+//    }
     maven {
-        name "proMaven"
-        url "${rootProject.file("localMaven")}"
+        name "traseMaven"
+        url "https://nexus.trasre.com/repository/os-release/"
+        credentials {
+            username "weibo.jin"
+            password "Asla1208-"
+        }
     }
 }
 

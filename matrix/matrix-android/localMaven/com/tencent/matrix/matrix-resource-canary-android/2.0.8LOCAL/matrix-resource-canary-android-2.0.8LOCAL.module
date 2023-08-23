@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-resource-canary-android",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "m7h6upu5tvhdxfdptiwwgtx5my"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.4.32"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-resource-canary-common",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.tinker",
+          "module": "tinker-ziputils",
+          "version": {
+            "requires": "1.9.2"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-backtrace",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-resource-canary-analyzer",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-resource-canary-android-2.0.8LOCAL.aar",
+          "url": "matrix-resource-canary-android-2.0.8LOCAL.aar",
+          "size": 1502265,
+          "sha512": "eb4d34d9cfb50ae34398ed6c9fe7d21538822eead54e221f1f2a11239798ced6e7d17cf336900e588c601f65782a6132b4f4e9100ab382aaa7323c46af82e617",
+          "sha256": "c8050c5871286941ee89f64b779321f21f2b84cd045de6672ce1484fd2ffedb3",
+          "sha1": "e72d53e47763fdacd0313637c8975b155d85e6c5",
+          "md5": "eb717ed228ac7702d47521c5eac680f9"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-resource-canary-android-2.0.8LOCAL.aar",
+          "url": "matrix-resource-canary-android-2.0.8LOCAL.aar",
+          "size": 1502265,
+          "sha512": "eb4d34d9cfb50ae34398ed6c9fe7d21538822eead54e221f1f2a11239798ced6e7d17cf336900e588c601f65782a6132b4f4e9100ab382aaa7323c46af82e617",
+          "sha256": "c8050c5871286941ee89f64b779321f21f2b84cd045de6672ce1484fd2ffedb3",
+          "sha1": "e72d53e47763fdacd0313637c8975b155d85e6c5",
+          "md5": "eb717ed228ac7702d47521c5eac680f9"
+        }
+      ]
+    }
+  ]
+}

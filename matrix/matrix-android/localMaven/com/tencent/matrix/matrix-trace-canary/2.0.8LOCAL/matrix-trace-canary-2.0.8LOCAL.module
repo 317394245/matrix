@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-trace-canary",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-trace-canary-2.0.8LOCAL.aar",
+          "url": "matrix-trace-canary-2.0.8LOCAL.aar",
+          "size": 1248640,
+          "sha512": "17494ac01e19877ac3e3ee8d629b19ae002b0a22cfab8b5e56a25e9b88d47c734306636ccf46747832c2f9bf56fb779c4291c239514e6618630316d0dabc9af3",
+          "sha256": "b1378ee26c78dccaa1597bc745d80c24de9cdbdfa8e4a87fb8c2318d88c62c6c",
+          "sha1": "546d1256cbdf13cb46b24e9b5d3e4511f9bf666f",
+          "md5": "77f7b40b10c7179fb6c7730f9a47abd7"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-trace-canary-2.0.8LOCAL.aar",
+          "url": "matrix-trace-canary-2.0.8LOCAL.aar",
+          "size": 1248640,
+          "sha512": "17494ac01e19877ac3e3ee8d629b19ae002b0a22cfab8b5e56a25e9b88d47c734306636ccf46747832c2f9bf56fb779c4291c239514e6618630316d0dabc9af3",
+          "sha256": "b1378ee26c78dccaa1597bc745d80c24de9cdbdfa8e4a87fb8c2318d88c62c6c",
+          "sha1": "546d1256cbdf13cb46b24e9b5d3e4511f9bf666f",
+          "md5": "77f7b40b10c7179fb6c7730f9a47abd7"
+        }
+      ]
+    }
+  ]
+}

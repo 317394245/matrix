@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-traffic",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-backtrace",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-traffic-2.0.8LOCAL.aar",
+          "url": "matrix-traffic-2.0.8LOCAL.aar",
+          "size": 498123,
+          "sha512": "b3444037e518687fa20159230ad2fd97ff0389b6c1546eddcf9512c60b3f8eceeaad7f2c950fda66f0f72b2c6543be4475866d2bd0bc214dd80acd4b9aef87ed",
+          "sha256": "2749bb4c9c6782ba86e51929f568e97fc70eead0ff69a69a9de89c860f2f181b",
+          "sha1": "8f91c06be3fda4a828384dfc6fd51493bb11604d",
+          "md5": "ccea3f23e6aee93900b4944539ebef17"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-traffic-2.0.8LOCAL.aar",
+          "url": "matrix-traffic-2.0.8LOCAL.aar",
+          "size": 498123,
+          "sha512": "b3444037e518687fa20159230ad2fd97ff0389b6c1546eddcf9512c60b3f8eceeaad7f2c950fda66f0f72b2c6543be4475866d2bd0bc214dd80acd4b9aef87ed",
+          "sha256": "2749bb4c9c6782ba86e51929f568e97fc70eead0ff69a69a9de89c860f2f181b",
+          "sha1": "8f91c06be3fda4a828384dfc6fd51493bb11604d",
+          "md5": "ccea3f23e6aee93900b4944539ebef17"
+        }
+      ]
+    }
+  ]
+}

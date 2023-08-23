@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-sqlite-lint-android-sdk-no-op",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-sqlite-lint-android-sdk-no-op-2.0.8LOCAL.aar",
+          "url": "matrix-sqlite-lint-android-sdk-no-op-2.0.8LOCAL.aar",
+          "size": 9687,
+          "sha512": "827ebec9a6b4fc574a211b1aded30aa2ebeeb26796ba84f99990028cab9b6a85c18a66e3acac9aeb845c0a9ff0ebb0b5ca4a1e6988c0add615a4efa4035690cc",
+          "sha256": "8c01c97f03dd2325851e8ef4406d2502710347990f4a45e6876f9540eb1f227a",
+          "sha1": "258b558300796dd429b84d34ffc3d28b47546e0d",
+          "md5": "4dfcb36302167f61421b0428e527c8e6"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-sqlite-lint-android-sdk-no-op-2.0.8LOCAL.aar",
+          "url": "matrix-sqlite-lint-android-sdk-no-op-2.0.8LOCAL.aar",
+          "size": 9687,
+          "sha512": "827ebec9a6b4fc574a211b1aded30aa2ebeeb26796ba84f99990028cab9b6a85c18a66e3acac9aeb845c0a9ff0ebb0b5ca4a1e6988c0add615a4efa4035690cc",
+          "sha256": "8c01c97f03dd2325851e8ef4406d2502710347990f4a45e6876f9540eb1f227a",
+          "sha1": "258b558300796dd429b84d34ffc3d28b47546e0d",
+          "md5": "4dfcb36302167f61421b0428e527c8e6"
+        }
+      ]
+    }
+  ]
+}

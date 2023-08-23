@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-hooks",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-backtrace",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-hooks-2.0.8LOCAL.aar",
+          "url": "matrix-hooks-2.0.8LOCAL.aar",
+          "size": 699128,
+          "sha512": "15976df52ecdae808369cc777dd5ff72c3a418c9eb8d05c0db182aa1e8e5e599036cfa53ad4243ac89e20e37472ccb0faffa9d41db185fa17ac979f814400d6c",
+          "sha256": "d937d04b16177909f55a93d1a115431d3cc191731c5f59691a7c43e608467892",
+          "sha1": "3c6ea8700dc54c9307b93e31306f6b986ccba5f3",
+          "md5": "cb753ca608033d89e6c2ce616cfc5cbe"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-hooks-2.0.8LOCAL.aar",
+          "url": "matrix-hooks-2.0.8LOCAL.aar",
+          "size": 699128,
+          "sha512": "15976df52ecdae808369cc777dd5ff72c3a418c9eb8d05c0db182aa1e8e5e599036cfa53ad4243ac89e20e37472ccb0faffa9d41db185fa17ac979f814400d6c",
+          "sha256": "d937d04b16177909f55a93d1a115431d3cc191731c5f59691a7c43e608467892",
+          "sha1": "3c6ea8700dc54c9307b93e31306f6b986ccba5f3",
+          "md5": "cb753ca608033d89e6c2ce616cfc5cbe"
+        }
+      ]
+    }
+  ]
+}

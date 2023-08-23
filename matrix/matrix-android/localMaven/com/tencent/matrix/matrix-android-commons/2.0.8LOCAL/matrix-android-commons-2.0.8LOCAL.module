@@ -1,0 +1,62 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-android-commons",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-android-commons-2.0.8LOCAL.aar",
+          "url": "matrix-android-commons-2.0.8LOCAL.aar",
+          "size": 935372,
+          "sha512": "d5503af3f66b79c9af1aa94308eb6aa06ea052215b5ca2ecdd3ea86288aa3a8441dc39ee4b400dd1486fabee56d2bbf0855d2104f5a2e9b472d4d3eca1b280fe",
+          "sha256": "a72854e5079817be085c140bb47c4b809169809fc65813f459ee2d4abd54ee78",
+          "sha1": "6874a2b13c8a9422a5988b9136713b538c8ffdaa",
+          "md5": "8e7260463f809cbacf3181b846ba4fc3"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-android-commons-2.0.8LOCAL.aar",
+          "url": "matrix-android-commons-2.0.8LOCAL.aar",
+          "size": 935372,
+          "sha512": "d5503af3f66b79c9af1aa94308eb6aa06ea052215b5ca2ecdd3ea86288aa3a8441dc39ee4b400dd1486fabee56d2bbf0855d2104f5a2e9b472d4d3eca1b280fe",
+          "sha256": "a72854e5079817be085c140bb47c4b809169809fc65813f459ee2d4abd54ee78",
+          "sha1": "6874a2b13c8a9422a5988b9136713b538c8ffdaa",
+          "md5": "8e7260463f809cbacf3181b846ba4fc3"
+        }
+      ]
+    }
+  ]
+}

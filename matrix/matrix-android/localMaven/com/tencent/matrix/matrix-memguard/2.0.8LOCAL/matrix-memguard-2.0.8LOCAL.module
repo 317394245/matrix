@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-memguard",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "uvgjwxmkqnacjn44nn2mw5xryy"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-backtrace",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-hooks",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-commons",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-android-lib",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-memguard-2.0.8LOCAL.aar",
+          "url": "matrix-memguard-2.0.8LOCAL.aar",
+          "size": 557670,
+          "sha512": "a7817a1dddb731de42450d4628447bb45070ae93421dd1014dca2736e98c80637189c25ea4c3be96ce177a6ec9fcd34e1464e60bf12e844a3e5e01e812a2c2d1",
+          "sha256": "9d1b638092d5e46cc03867785864a72d29072de1209cfd9a067ac38e50450ba0",
+          "sha1": "aedaddb15cda4111d6440a6bee86766956bfdd10",
+          "md5": "c487d28c9c98fc5e84dbfcb937356026"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "matrix-memguard-2.0.8LOCAL.aar",
+          "url": "matrix-memguard-2.0.8LOCAL.aar",
+          "size": 557670,
+          "sha512": "a7817a1dddb731de42450d4628447bb45070ae93421dd1014dca2736e98c80637189c25ea4c3be96ce177a6ec9fcd34e1464e60bf12e844a3e5e01e812a2c2d1",
+          "sha256": "9d1b638092d5e46cc03867785864a72d29072de1209cfd9a067ac38e50450ba0",
+          "sha1": "aedaddb15cda4111d6440a6bee86766956bfdd10",
+          "md5": "c487d28c9c98fc5e84dbfcb937356026"
+        }
+      ]
+    }
+  ]
+}

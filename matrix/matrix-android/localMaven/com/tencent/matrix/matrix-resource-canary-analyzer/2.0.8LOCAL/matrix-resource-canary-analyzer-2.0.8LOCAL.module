@@ -1,0 +1,86 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tencent.matrix",
+    "module": "matrix-resource-canary-analyzer",
+    "version": "2.0.8LOCAL",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "adgdrknaejdjxkxmokcrgpi7qm"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.haha",
+          "module": "haha",
+          "version": {
+            "requires": "2.0.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-resource-canary-analyzer-2.0.8LOCAL.jar",
+          "url": "matrix-resource-canary-analyzer-2.0.8LOCAL.jar",
+          "size": 90173,
+          "sha512": "f954d0e6fedcc490232bbc14a44ccf848cd68672f03d58d0e61b89b58e51e68f725c60ce58b4d0236aabe63b3bac30280e24526880d8f7fa5222db9cb6e31e45",
+          "sha256": "a31980b29972e69c1df3d2baed9beeeb239f3ff8697cb1af1f41702db905ff97",
+          "sha1": "87fb56d764b30996a255fcea9a981af558aa9009",
+          "md5": "cf23f6d3270ecb708145ad8832b5dd79"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.tencent.matrix",
+          "module": "matrix-resource-canary-common",
+          "version": {
+            "requires": "2.0.8LOCAL"
+          }
+        },
+        {
+          "group": "com.squareup.haha",
+          "module": "haha",
+          "version": {
+            "requires": "2.0.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "matrix-resource-canary-analyzer-2.0.8LOCAL.jar",
+          "url": "matrix-resource-canary-analyzer-2.0.8LOCAL.jar",
+          "size": 90173,
+          "sha512": "f954d0e6fedcc490232bbc14a44ccf848cd68672f03d58d0e61b89b58e51e68f725c60ce58b4d0236aabe63b3bac30280e24526880d8f7fa5222db9cb6e31e45",
+          "sha256": "a31980b29972e69c1df3d2baed9beeeb239f3ff8697cb1af1f41702db905ff97",
+          "sha1": "87fb56d764b30996a255fcea9a981af558aa9009",
+          "md5": "cf23f6d3270ecb708145ad8832b5dd79"
+        }
+      ]
+    }
+  ]
+}
